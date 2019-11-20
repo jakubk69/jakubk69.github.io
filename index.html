@@ -23,30 +23,45 @@
           background-attachment: fixed;
           background-position: center; 
           }
+
+          
+          ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+  				overflow: hidden;
+  				background-color: #333;
+					}
+
+					li {
+  				float: left;
+					}
+
+					li a {
+  				display: block;
+					color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+ 					text-decoration: none;
+					}
+
+					/* Change the link color to #111 (black) on hover */
+					li a:hover {
+  				background-color: #111;
+					}
           </style>
-     </head>
-     <body>
-          <header>
-               <h1 style="text-align:center">
-                    <p class="sansserif"><font size="10" color="coral">Highlights</font></p>
-               </h1>
-          </header>
-          <nav>
-              <form action"/action_page.php">
-               Search on website: <input type="search" name="q"><br/>
-               <input type="submit">
-               </form>
-          </nav>
-          <section>
-               <article>
-                    My article:
-               </article>
-          </section>
-          <aside>
-               Kolumna boczna
-          </aside>
-          <footer>
-               Stopka
-          </footer>
-     </body>
+      </head>
+      <body>
+			<ul>
+  		<li><a class="active" href="#home">Home</a></li>
+  		<li><a href="#news">News</a></li>
+  		<li><a href="#contact">Contact</a></li>
+ 			<li><a href="#about">About</a></li>
+			<li><form action"/action_page.php">
+          Search on website: <input type="search" name="q"><br/>
+          <input type="submit">
+					</form></li>
+			
+			</ul>
+      </body>
 </html>
